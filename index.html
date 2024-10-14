@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>March Madness Bracket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!------------------------------>			
+	<!---------- Bracket ----------->
+	<!------------------------------>
+    <div class="bracket_wrapper">
+        <div class="bracket_container">
+		    <!-- Define the lines overlay -->
+			<svg class="bracket_lines" width="100%" height="100%" style="position: absolute; top: 0; left: 0; pointer-events: none;">
+				<!-- JS will dynamically insert lines here -->
+			</svg>
+			<!------------------------------>
+			<!---------- East -------------->
+			<!------------------------------>
+			<!---------- Round 1 ----------->
+			<!------------------------------>
+			<!---------- Game 1 ------------>
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_01">
+				<div class="game_container" id="game_container_01">
+					<div class="team_container" id="game_01_top">
+						<div class="logo_container"></div>
+						<div class="seed">1</div>
+						<div class="team_name">teamName</div>
+						<div class="emoji">✅</div>
+					</div>
+					<div class="team_container" id="game_01_bot">
+						<div class="logo_container"></div>
+						<div class="seed">16</div>
+						<div class="team_name">teamName</div>
+						<div class="emoji">❌</div>
+					</div>
+				</div>
+			</div>
+			<!----------------------------->
+			<!---------- Game 2 ----------->
+			<!----------------------------->
+			<div class="game_wrapper" id="game_wrapper_02">
+				<div class="game_container" id="game_container_02">
+					<div class="team_container" id="game_02_top">
+						<div class="logo_container"></div>
+						<div class="seed">8</div>
+						<div class="team_name">teamName</div>
+						<div class="emoji">❌</div>
+					</div>
+					<div class="team_container" id="game_02_bot">
+						<div class="logo_container"></div>
+						<div class="seed">9</div>
+						<div class="team_name">teamName</div>
+						<div class="emoji">✅</div>
+					</div>
+				</div>
+			</div>
+			<!----------------------------->
+			<!---------- Game 3 ----------->
+			<!----------------------------->
+			<div class="game_wrapper" id="game_wrapper_03">
+				<div class="game_container" id="game_container_03">
+					<div class="team_container" id="game_03_top">
+						<div class="logo_container"></div>
+						<div class="seed">5</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_03_bot">
+						<div class="logo_container"></div>
+						<div class="seed">12</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!----------------------------->		
+			<!---------- Game 4 ----------->
+			<!----------------------------->
+			<div class="game_wrapper" id="game_wrapper_04">
+				<div class="game_container" id="game_container_04">
+					<div class="team_container" id="game_04_top">
+						<div class="logo_container"></div>
+						<div class="seed">4</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_04_bot">
+						<div class="logo_container"></div>
+						<div class="seed">13</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!----------------------------->
+			<!---------- Game 5 ----------->
+			<!----------------------------->
+			<div class="game_wrapper" id="game_wrapper_05">
+				<div class="game_container" id="game_container_05">
+					<div class="team_container" id="game_05_top">
+						<div class="logo_container"></div>
+						<div class="seed">6</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_05_bot">
+						<div class="logo_container"></div>
+						<div class="seed">11</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!----------------------------->
+			<!---------- Game 6 ----------->
+			<!----------------------------->
+			<div class="game_wrapper" id="game_wrapper_06">
+				<div class="game_container" id="game_container_06">
+					<div class="team_container" id="game_06_top">
+						<div class="logo_container"></div>
+						<div class="seed">3</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_06_bot">
+						<div class="logo_container"></div>
+						<div class="seed">14</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!----------------------------->
+			<!---------- Game 7 ----------->
+			<!----------------------------->
+			<div class="game_wrapper" id="game_wrapper_07">
+				<div class="game_container" id="game_container_07">
+					<div class="team_container" id="game_07_top">
+						<div class="logo_container"></div>
+						<div class="seed">7</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_07_bot">
+						<div class="logo_container"></div>
+						<div class="seed">10</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!----------------------------->
+			<!---------- Game 8 ----------->
+			<!----------------------------->
+			<div class="game_wrapper" id="game_wrapper_08">
+				<div class="game_container" id="game_container_08">
+					<div class="team_container" id="game_08_top">
+						<div class="logo_container"></div>
+						<div class="seed">2</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_08_bot">
+						<div class="logo_container"></div>
+						<div class="seed">15</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Round 2 ----------->
+			<!------------------------------>
+			<!---------- Game 33 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_33">
+				<div class="game_container" id="game_container_33">
+					<div class="team_container" id="game_33_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_33_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 34 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_34">
+				<div class="game_container" id="game_container_34">
+					<div class="team_container" id="game_34_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_34_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 35 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_35">
+				<div class="game_container" id="game_container_35">
+					<div class="team_container" id="game_35_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_35_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 36 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_36">
+				<div class="game_container" id="game_container_36">
+					<div class="team_container" id="game_36_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_36_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Round 3 ----------->
+			<!------------------------------>
+			<!---------- Game 49 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_49">
+				<div class="game_container" id="game_container_49">
+					<div class="team_container" id="game_49_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_49_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 50 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_50">
+				<div class="game_container" id="game_container_50">
+					<div class="team_container" id="game_50_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_50_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Round 4 ----------->
+			<!------------------------------>
+			<!---------- Game 57 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_57">
+				<div class="game_container" id="game_container_57">
+					<div class="team_container" id="game_57_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_57_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- West -------------->
+			<!------------------------------>
+			<!---------- Round 1 ----------->
+			<!------------------------------>
+			<!---------- Game 9 ------------>
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_09">
+				<div class="game_container" id="game_container_09">
+					<div class="team_container" id="game_09_top">
+						<div class="logo_container"></div>
+						<div class="seed">1</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_09_bot">
+						<div class="logo_container"></div>
+						<div class="seed">16</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 10 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_10">
+				<div class="game_container" id="game_container_10">
+					<div class="team_container" id="game_10_top">
+						<div class="logo_container"></div>
+						<div class="seed">8</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_10_bot">
+						<div class="logo_container"></div>
+						<div class="seed">9</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 11 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_11">
+				<div class="game_container" id="game_container_11">
+					<div class="team_container" id="game_11_top">
+						<div class="logo_container"></div>
+						<div class="seed">5</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_11_bot">
+						<div class="logo_container"></div>
+						<div class="seed">12</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 12 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_12">
+				<div class="game_container" id="game_container_12">
+					<div class="team_container" id="game_12_top">
+						<div class="logo_container"></div>
+						<div class="seed">4</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_12_bot">
+						<div class="logo_container"></div>
+						<div class="seed">13</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 13 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_13">
+				<div class="game_container" id="game_container_13">
+					<div class="team_container" id="game_13_top">
+						<div class="logo_container"></div>
+						<div class="seed">6</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_13_bot">
+						<div class="logo_container"></div>
+						<div class="seed">11</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 14 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_14">
+				<div class="game_container" id="game_container_14">
+					<div class="team_container" id="game_14_top">
+						<div class="logo_container"></div>
+						<div class="seed">3</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_14_bot">
+						<div class="logo_container"></div>
+						<div class="seed">14</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 15 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_15">
+				<div class="game_container" id="game_container_15">
+					<div class="team_container" id="game_15_top">
+						<div class="logo_container"></div>
+						<div class="seed">7</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_15_bot">
+						<div class="logo_container"></div>
+						<div class="seed">10</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 16 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_16">
+				<div class="game_container" id="game_container_16">
+					<div class="team_container" id="game_16_top">
+						<div class="logo_container"></div>
+						<div class="seed">2</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_16_bot">
+						<div class="logo_container"></div>
+						<div class="seed">15</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Round 2 ----------->
+			<!------------------------------>
+			<!---------- Game 37 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_37">
+				<div class="game_container" id="game_container_37">
+					<div class="team_container" id="game_37_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_37_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 38 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_38">
+				<div class="game_container" id="game_container_38">
+					<div class="team_container" id="game_38_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_38_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 39 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_39">
+				<div class="game_container" id="game_container_39">
+					<div class="team_container" id="game_39_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_39_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 40 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_40">
+				<div class="game_container" id="game_container_40">
+					<div class="team_container" id="game_40_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_40_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>		
+			<!---------- Round 3 ----------->
+			<!------------------------------>
+			<!---------- Game 51 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_51">
+				<div class="game_container" id="game_container_51">
+					<div class="team_container" id="game_51_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_51_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 52 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_52">
+				<div class="game_container" id="game_container_52">
+					<div class="team_container" id="game_52_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_52_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Round 4 ----------->
+			<!------------------------------>
+			<!---------- Game 58 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_58">
+				<div class="game_container" id="game_container_58">
+					<div class="team_container" id="game_58_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_58_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- South ------------->
+			<!------------------------------>
+			<!---------- Round 1 ----------->
+			<!------------------------------>
+			<!---------- Game 17 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_17">
+				<div class="game_container" id="game_container_17">
+					<div class="team_container" id="game_17_top">
+						<div class="logo_container"></div>
+						<div class="seed">1</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_17_bot">
+						<div class="logo_container"></div>
+						<div class="seed">16</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 18 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_18">
+				<div class="game_container" id="game_container_18">
+					<div class="team_container" id="game_18_top">
+						<div class="logo_container"></div>
+						<div class="seed">8</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_18_bot">
+						<div class="logo_container"></div>
+						<div class="seed">9</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 19 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_19">
+				<div class="game_container" id="game_container_19">
+					<div class="team_container" id="game_19_top">
+						<div class="logo_container"></div>
+						<div class="seed">5</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_19_bot">
+						<div class="logo_container"></div>
+						<div class="seed">12</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 20 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_20">
+				<div class="game_container" id="game_container_20">
+					<div class="team_container" id="game_20_top">
+						<div class="logo_container"></div>
+						<div class="seed">4</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_20_bot">
+						<div class="logo_container"></div>
+						<div class="seed">13</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>		
+			<!---------- Game 21 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_21">
+				<div class="game_container" id="game_container_21">
+					<div class="team_container" id="game_21_top">
+						<div class="logo_container"></div>
+						<div class="seed">6</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_21_bot">
+						<div class="logo_container"></div>
+						<div class="seed">11</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 22 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_22">
+				<div class="game_container" id="game_container_22">
+					<div class="team_container" id="game_22_top">
+						<div class="logo_container"></div>
+						<div class="seed">3</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_22_bot">
+						<div class="logo_container"></div>
+						<div class="seed">14</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 23 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_23">
+				<div class="game_container" id="game_container_23">
+					<div class="team_container" id="game_23_top">
+						<div class="logo_container"></div>
+						<div class="seed">7</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_23_bot">
+						<div class="logo_container"></div>
+						<div class="seed">10</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 24 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_24">
+				<div class="game_container" id="game_container_24">
+					<div class="team_container" id="game_24_top">
+						<div class="logo_container"></div>
+						<div class="seed">2</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_24_bot">
+						<div class="logo_container"></div>
+						<div class="seed">15</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Round 2 ----------->
+			<!------------------------------>
+			<!---------- Game 41 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_41">
+				<div class="game_container" id="game_container_41">
+					<div class="team_container" id="game_41_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_41_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 42 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_42">
+				<div class="game_container" id="game_container_42">
+					<div class="team_container" id="game_42_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_42_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 43 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_43">
+				<div class="game_container" id="game_container_43">
+					<div class="team_container" id="game_43_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_43_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 44 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_44">
+				<div class="game_container" id="game_container_44">
+					<div class="team_container" id="game_44_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_44_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Round 3 ----------->
+			<!------------------------------>
+			<!---------- Game 53 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_53">
+				<div class="game_container" id="game_container_53">
+					<div class="team_container" id="game_53_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_53_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 54 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_54">
+				<div class="game_container" id="game_container_54">
+					<div class="team_container" id="game_54_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_54_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>		
+			<!---------- Round 4 ----------->
+			<!------------------------------>
+			<!---------- Game 59 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_59">
+				<div class="game_container" id="game_container_59">
+					<div class="team_container" id="game_59_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_59_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Midwest ----------->
+			<!------------------------------>
+			<!---------- Round 1 ----------->
+			<!------------------------------>
+			<!---------- Game 25 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_25">
+				<div class="game_container" id="game_container_25">
+					<div class="team_container" id="game_25_top">
+						<div class="logo_container"></div>
+						<div class="seed">1</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_25_bot">
+						<div class="logo_container"></div>
+						<div class="seed">16</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 26 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_26">
+				<div class="game_container" id="game_container_26">
+					<div class="team_container" id="game_26_top">
+						<div class="logo_container"></div>
+						<div class="seed">8</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_26_bot">
+						<div class="logo_container"></div>
+						<div class="seed">9</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 27 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_27">
+				<div class="game_container" id="game_container_27">
+					<div class="team_container" id="game_27_top">
+						<div class="logo_container"></div>
+						<div class="seed">5</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_27_bot">
+						<div class="logo_container"></div>
+						<div class="seed">12</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 28 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_28">
+				<div class="game_container" id="game_container_28">
+					<div class="team_container" id="game_28_top">
+						<div class="logo_container"></div>
+						<div class="seed">4</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_28_bot">
+						<div class="logo_container"></div>
+						<div class="seed">13</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 29 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_29">
+				<div class="game_container" id="game_container_29">
+					<div class="team_container" id="game_29_top">
+						<div class="logo_container"></div>
+						<div class="seed">6</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_29_bot">
+						<div class="logo_container"></div>
+						<div class="seed">11</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 30 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_30">
+				<div class="game_container" id="game_container_30">
+					<div class="team_container" id="game_30_top">
+						<div class="logo_container"></div>
+						<div class="seed">3</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_30_bot">
+						<div class="logo_container"></div>
+						<div class="seed">14</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 31 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_31">
+				<div class="game_container" id="game_container_31">
+					<div class="team_container" id="game_31_top">
+						<div class="logo_container"></div>
+						<div class="seed">7</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_31_bot">
+						<div class="logo_container"></div>
+						<div class="seed">10</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 32 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_32">
+				<div class="game_container" id="game_container_32">
+					<div class="team_container" id="game_32_top">
+						<div class="logo_container"></div>
+						<div class="seed">2</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_32_bot">
+						<div class="logo_container"></div>
+						<div class="seed">15</div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Round 2 ----------->
+			<!------------------------------>
+			<!---------- Game 45 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_45">
+				<div class="game_container" id="game_container_45">
+					<div class="team_container" id="game_45_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_45_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 46 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_46">
+				<div class="game_container" id="game_container_46">
+					<div class="team_container" id="game_46_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_46_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 47 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_47">
+				<div class="game_container" id="game_container_47">
+					<div class="team_container" id="game_47_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_47_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 48 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_48">
+				<div class="game_container" id="game_container_48">
+					<div class="team_container" id="game_48_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_48_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Round 3 ----------->
+			<!------------------------------>
+			<!---------- Game 55 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_55">
+				<div class="game_container" id="game_container_55">
+					<div class="team_container" id="game_55_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_55_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 56 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_56">
+				<div class="game_container" id="game_container_56">
+					<div class="team_container" id="game_56_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_56_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Round 4 ----------->
+			<!------------------------------>
+			<!---------- Game 60 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_60">
+				<div class="game_container" id="game_container_60">
+					<div class="team_container" id="game_60_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_60_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------------------->
+			<!---------- Final Four --------------------->
+			<!------------------------------------------->
+			<!---------- Semi 1 East vs. West ----------->
+			<!------------------------------------------->
+			<!---------- Game 61 ------------------------>
+			<!------------------------------------------->
+			<div class="game_wrapper" id="game_wrapper_61">
+				<div class="game_container" id="game_container_61">
+					<div class="team_container" id="game_61_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_61_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!----------------------------------------------->
+			<!---------- Semi 2 South vs. Midwest ----------->
+			<!----------------------------------------------->
+			<!---------- Game 62 ---------------------------->
+			<!----------------------------------------------->
+			<div class="game_wrapper" id="game_wrapper_62">
+				<div class="game_container" id="game_container_62">
+					<div class="team_container" id="game_62_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_62_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!----------------------------->
+			<!---------- Finals ----------->
+			<!----------------------------->
+			<!---------- Game 63 ---------->
+			<!----------------------------->
+			<div class="game_wrapper" id="game_wrapper_63">
+				<div class="game_container" id="game_container_63">
+					<div class="team_container" id="game_63_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_63_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!--------------------------------->
+			<!---------- First Four ----------->
+			<!--------------------------------->
+			<!---------- Game 64 -------------->
+			<!--------------------------------->
+			<div class="game_wrapper" id="game_wrapper_64">
+				<div class="game_container" id="game_container_64">
+					<div class="team_container" id="game_64_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_64_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 65 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_65">
+				<div class="game_container" id="game_container_65">
+					<div class="team_container" id="game_65_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_65_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 66 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_66">
+				<div class="game_container" id="game_container_66">
+					<div class="team_container" id="game_66_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_66_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------>
+			<!---------- Game 67 ----------->
+			<!------------------------------>
+			<div class="game_wrapper" id="game_wrapper_67">
+				<div class="game_container" id="game_container_67">
+					<div class="team_container" id="game_67_top">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+					<div class="team_container" id="game_67_bot">
+						<div class="logo_container"></div>
+						<div class="seed"></div>
+						<div class="team_name"></div>
+						<div class="emoji"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
