@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Antonio', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -75,7 +75,7 @@ body {
   width: auto;
   border-radius: 50%;
   aspect-ratio: 1/1;
-  margin-left: 1%;
+  margin-left: 0.75%;
 }
 
 .seed {
@@ -107,6 +107,13 @@ body {
   vertical-align: middle;
   font-size: inherit;
   line-height: 1;
+}
+
+#game_wrapper_63 {
+  grid-column: 6; /* Center it in the same column as other games */
+  grid-row: 16 / span 2; /* Keep the row span */
+  justify-self: center; /* Ensure it's centered */
+  width: 50%; /* Shrink the width to match other games */
 }
 
 /* East */
