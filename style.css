@@ -19,11 +19,11 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(32, 1fr);
   box-sizing: border-box;
-  width: 99%;
+  width: 100%;
   height: auto;
   aspect-ratio: 2 / 1;
-  max-height: 99%;
-  max-width: 99%;
+  max-height: 100%;
+  max-width: 100%;
   position: relative;
 }
 
@@ -31,6 +31,13 @@ body {
   display: flex;
   flex-direction: column;
   grid-row: span 2;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  box-sizing: border-box;
 }
 
 .game_container {
@@ -41,7 +48,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 2px;
   background-color: #fafafa;
-  width: 90%;
+  width: 95%;
   height: 90%;
   box-sizing: border-box;
 }
