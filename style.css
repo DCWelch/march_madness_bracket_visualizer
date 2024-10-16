@@ -69,10 +69,10 @@ body {
 
 .logo_container {
   flex-shrink: 0;
-  height: 95%;
+  height: 80%;
   width: auto;
   aspect-ratio: 1/1;
-  margin-left: 0.75%;
+  margin-left: 2%;
 }
 
 .seed {
