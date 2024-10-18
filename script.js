@@ -1,3 +1,6 @@
+
+/* JS for the March Madness Bracket Visualizer */
+
 const settings = {
   "population": 1,
   "right_flip": 0,
