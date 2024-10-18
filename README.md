@@ -1,5 +1,5 @@
 # March Madness Bracket Visualizer
 
-A clean visualization of the NCAA March Madness bracket using only HTML, CSS, and JS.
+A tool to create clean visualizations of the NCAA Division I men's and women's basketball tournament brackets using only HTML, CSS, and JS.
 
-The current bracket follows the format used during the 2023 Division I Men's Basketball Tournament. It also populates the first round with the team information from the same tournament.
+The current bracket is populated with data from the 2023 men's tournament and can be seen at https://dcwelch.github.io/march_madness_bracket_visualizer/
