@@ -398,20 +398,27 @@ const teamData = [
   }
 ];
 
-const gameData = [
+const bracketData = [
   {
 	"game_id": 1,
-    "top_team_id": 1,
-    "bot_team_id": 2,
-    "top_score": 80,
-    "bot_score": 80
+    "team_id": 1,
+	"team_id": xxx,
+	"seed":1,
+    "score": 80
+  },
+  {
+	"game_id": 1,
+    "team_id": 2,
+	"team_id": yyy,
+	"seed":16,
+    "score": 80
   },
   {
 	"game_id": 2,
-    "top_team_id": 3,
-    "bot_team_id": 4,
-    "top_score": 80,
-    "bot_score": 80
+    "team_id": 3,
+	"team_id": zzz,
+	"seed":8,
+    "score": 80
   }
 ];
 
