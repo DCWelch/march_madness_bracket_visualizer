@@ -419,6 +419,13 @@ const bracketData = [
 	"team_id": zzz,
 	"seed":8,
     "score": 80
+  },
+  {
+	"game_id": 2,
+    "team_id": 4,
+	"team_id": ---,
+	"seed":9,
+    "score": 80
   }
 ];
 
