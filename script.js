@@ -400,30 +400,26 @@ const teamData = [
 
 const bracketData = [
   {
-	"game_id": 1,
-    "team_id": 1,
-	"team_id": xxx,
+    "bracket_id": 1,
+	"team": xxx,
 	"seed":1,
     "score": 80
   },
   {
-	"game_id": 1,
-    "team_id": 2,
-	"team_id": yyy,
+    "bracket_id": 2,
+	"team": yyy,
 	"seed":16,
     "score": 80
   },
   {
-	"game_id": 2,
-    "team_id": 3,
-	"team_id": zzz,
+    "bracket_id": 3,
+	"team": zzz,
 	"seed":8,
     "score": 80
   },
   {
-	"game_id": 2,
-    "team_id": 4,
-	"team_id": ---,
+    "bracket_id": 4,
+	"team": ---,
 	"seed":9,
     "score": 80
   }
@@ -496,10 +492,6 @@ function drawBracketLine(game1, game2, variant) {
       drawSVGLine(`${midX}%`, `${startY}%`, `${midX}%`, `${midY}%`, '#ccc', 'square', 'square', '1');
       drawSVGLine(`${midX}%`, `${midY}%`, `${endX}%`, `${midY}%`, '#ccc', 'square', 'square', '1');
 	  break;
-    
-    default:
-      console.error('Invalid variant specified');
-      return;
   }
 }
 
