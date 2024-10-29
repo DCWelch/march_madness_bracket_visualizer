@@ -403,385 +403,385 @@ const bracketData = [
     "bracket_id": 1,
     "seed": 1,
     "team": "UConn",
-    "score": "uconn.svg"
+    "score": 91
   },
   {
     "bracket_id": 2,
     "seed": 16,
     "team": "Stetson",
-    "score": "stetson.svg"
+    "score": 52
   },
   {
     "bracket_id": 3,
     "seed": 8,
     "team": "FAU",
-    "score": "fla-atlantic.svg"
+    "score": 65
   },
   {
     "bracket_id": 4,
     "seed": 9,
     "team": "Northwestern",
-    "score": "northwestern.svg"
+    "score": 77
   },
   {
     "bracket_id": 5,
     "seed": 5,
     "team": "San Diego St.",
-    "score": "san-diego-st.svg"
+    "score": 69
   },
   {
     "bracket_id": 6,
     "seed": 12,
     "team": "UAB",
-    "score": "uab.svg"
+    "score": 85
   },
   {
     "bracket_id": 7,
     "seed": 4,
     "team": "Auburn",
-    "score": "auburn.svg"
+    "score": 76
   },
   {
     "bracket_id": 8,
     "seed": 13,
     "team": "Yale",
-    "score": "yale.svg"
+    "score": 78
   },
   {
     "bracket_id": 9,
     "seed": 6,
     "team": "BYU",
-    "score": "byu.svg"
+    "score": 71
   },
   {
     "bracket_id": 10,
     "seed": 11,
     "team": "Duquesne",
-    "score": "duquesne.svg"
+    "score": 71
   },
   {
     "bracket_id": 11,
     "seed": 3,
     "team": "Illinois",
-    "score": "illinois.svg"
+    "score": 85
   },
   {
     "bracket_id": 12,
     "seed": 14,
     "team": "Morehead St.",
-    "score": "morehead-st.svg"
+    "score": 69
   },
   {
     "bracket_id": 13,
     "seed": 7,
     "team": "Washington St.",
-    "score": "washington-st.svg"
+    "score": 86
   },
   {
     "bracket_id": 14,
     "seed": 10,
     "team": "Drake",
-    "score": "drake.svg"
+    "score": 61
   },
   {
     "bracket_id": 15,
     "seed": 2,
     "team": "Iowa St.",
-    "score": "iowa-st.svg"
+    "score": 82
   },
   {
     "bracket_id": 16,
     "seed": 15,
     "team": "S. Dakota St.",
-    "score": "south-dakota-st.svg"
+    "score": 65
   },
   {
     "bracket_id": 17,
     "seed": 1,
     "team": "North Carolina",
-    "score": "north-carolina.svg"
+    "score": 90
   },
   {
     "bracket_id": 18,
     "seed": 16,
     "team": "Wagner",
-    "score": "wagner.svg"
+    "score": 62
   },
   {
     "bracket_id": 19,
     "seed": 8,
     "team": "Mississippi St.",
-    "score": "mississippi-st.svg"
+    "score": 51
   },
   {
     "bracket_id": 20,
     "seed": 9,
     "team": "Michigan St.",
-    "score": "michigan-st.svg"
+    "score": 69
   },
   {
     "bracket_id": 21,
     "seed": 5,
     "team": "Saint Mary's",
-    "score": "st-marys-ca.svg"
+    "score": 66
   },
   {
     "bracket_id": 22,
     "seed": 12,
     "team": "Grand Canyon",
-    "score": "grand-canyon.svg"
+    "score": 75
   },
   {
     "bracket_id": 23,
     "seed": 4,
     "team": "Alabama",
-    "score": "alabama.svg"
+    "score": 109
   },
   {
     "bracket_id": 24,
     "seed": 13,
     "team": "Charleston",
-    "score": "col-of-charleston.svg"
+    "score": 96
   },
   {
     "bracket_id": 25,
     "seed": 6,
     "team": "Clemson",
-    "score": "clemson.svg"
+    "score": 77
   },
   {
     "bracket_id": 26,
     "seed": 11,
     "team": "New Mexico",
-    "score": "new-mexico.svg"
+    "score": 56
   },
   {
     "bracket_id": 27,
     "seed": 3,
     "team": "Baylor",
-    "score": "baylor.svg"
+    "score": 92
   },
   {
     "bracket_id": 28,
     "seed": 14,
     "team": "Colgate",
-    "score": "colgate.svg"
+    "score": 67
   },
   {
     "bracket_id": 29,
     "seed": 7,
     "team": "Dayton",
-    "score": "dayton.svg"
+    "score": 63
   },
   {
     "bracket_id": 30,
     "seed": 10,
     "team": "Nevada",
-    "score": "nevada.svg"
+    "score": 60
   },
   {
     "bracket_id": 31,
     "seed": 2,
     "team": "Arizona",
-    "score": "arizona.svg"
+    "score": 85
   },
   {
     "bracket_id": 32,
     "seed": 15,
     "team": "Long Beach St.",
-    "score": "long-beach-st.svg"
+    "score": 65
   },
   {
     "bracket_id": 33,
     "seed": 1,
     "team": "Houston",
-    "score": "houston.svg"
+    "score": 86
   },
   {
     "bracket_id": 34,
     "seed": 16,
     "team": "Longwood",
-    "score": "longwood.svg"
+    "score": 46
   },
   {
     "bracket_id": 35,
     "seed": 8,
     "team": "Nebraska",
-    "score": "nebraska.svg"
+    "score": 83
   },
   {
     "bracket_id": 36,
     "seed": 9,
     "team": "Texas A&M",
-    "score": "texas-am.svg"
+    "score": 98
   },
   {
     "bracket_id": 37,
     "seed": 5,
     "team": "Wisconsin",
-    "score": "wisconsin.svg"
+    "score": 61
   },
   {
     "bracket_id": 38,
     "seed": 12,
     "team": "James Madison",
-    "score": "james-madison.svg"
+    "score": 72
   },
   {
     "bracket_id": 39,
     "seed": 4,
     "team": "Duke",
-    "score": "duke.svg"
+    "score": 64
   },
   {
     "bracket_id": 40,
     "seed": 13,
     "team": "Vermont",
-    "score": "vermont.svg"
+    "score": 47
   },
   {
     "bracket_id": 41,
     "seed": 6,
     "team": "Texas Tech",
-    "score": "texas-tech.svg"
+    "score": 67
   },
   {
     "bracket_id": 42,
     "seed": 11,
     "team": "NC State",
-    "score": "north-carolina-st.svg"
+    "score": 80
   },
   {
     "bracket_id": 43,
     "seed": 3,
     "team": "Kentucky",
-    "score": "kentucky.svg"
+    "score": 76
   },
   {
     "bracket_id": 44,
     "seed": 14,
     "team": "Oakland",
-    "score": "oakland.svg"
+    "score": 80
   },
   {
     "bracket_id": 45,
     "seed": 7,
     "team": "Florbracket_ida",
-    "score": "florbracket_ida.svg"
+    "score": 100
   },
   {
     "bracket_id": 46,
     "seed": 10,
     "team": "Colorado",
-    "score": "colorado.svg"
+    "score": 102
   },
   {
     "bracket_id": 47,
     "seed": 2,
     "team": "Marquette",
-    "score": "marquette.svg"
+    "score": 87
   },
   {
     "bracket_id": 48,
     "seed": 15,
     "team": "Western Ky.",
-    "score": "western-ky.svg"
+    "score": 69
   },
   {
     "bracket_id": 49,
     "seed": 1,
     "team": "Purdue",
-    "score": "purdue.svg"
+    "score": 78
   },
   {
     "bracket_id": 50,
     "seed": 16,
     "team": "Grambling St.",
-    "score": "grambling.svg"
+    "score": 50
   },
   {
     "bracket_id": 51,
     "seed": 8,
     "team": "Utah St.",
-    "score": "utah-st.svg"
+    "score": 88
   },
   {
     "bracket_id": 52,
     "seed": 9,
     "team": "TCU",
-    "score": "tcu.svg"
+    "score": 72
   },
   {
     "bracket_id": 53,
     "seed": 5,
     "team": "Gonzaga",
-    "score": "gonzaga.svg"
+    "score": 86
   },
   {
     "bracket_id": 54,
     "seed": 12,
     "team": "McNeese",
-    "score": "mcneese.svg"
+    "score": 65
   },
   {
     "bracket_id": 55,
     "seed": 4,
     "team": "Kansas",
-    "score": "kansas.svg"
+    "score": 93
   },
   {
     "bracket_id": 56,
     "seed": 13,
     "team": "Samford",
-    "score": "samford.svg"
+    "score": 89
   },
   {
     "bracket_id": 57,
     "seed": 6,
     "team": "S. Carolina",
-    "score": "south-carolina.svg"
+    "score": 73
   },
   {
     "bracket_id": 58,
     "seed": 11,
     "team": "Oregon",
-    "score": "oregon.svg"
+    "score": 87
   },
   {
     "bracket_id": 59,
     "seed": 3,
     "team": "Creighton",
-    "score": "creighton.svg"
+    "score": 77
   },
   {
     "bracket_id": 60,
     "seed": 14,
     "team": "Akron",
-    "score": "akron.svg"
+    "score": 60
   },
   {
     "bracket_id": 61,
     "seed": 7,
     "team": "Texas",
-    "score": "texas.svg"
+    "score": 56
   },
   {
     "bracket_id": 62,
     "seed": 10,
     "team": "Colorado St.",
-    "score": "colorado-st.svg"
+    "score": 44
   },
   {
     "bracket_id": 63,
     "seed": 2,
     "team": "Tennessee",
-    "score": "tennessee.svg"
+    "score": 83
   },
   {
     "bracket_id": 64,
     "seed": 15,
     "team": "Saint Peter's",
-    "score": "st-peters.svg"
+    "score": 49
   }
 ];
 
