@@ -11,6 +11,73 @@ const settings = {
   "strikethrough_on_loss": 0
 };
 
+const logoMapping = [
+  { "team": "UConn", "logo": "uconn.svg" },
+  { "team": "Stetson", "logo": "stetson.svg" },
+  { "team": "FAU", "logo": "fla-atlantic.svg" },
+  { "team": "Northwestern", "logo": "northwestern.svg" },
+  { "team": "San Diego St.", "logo": "san-diego-st.svg" },
+  { "team": "UAB", "logo": "uab.svg" },
+  { "team": "Auburn", "logo": "auburn.svg" },
+  { "team": "Yale", "logo": "yale.svg" },
+  { "team": "BYU", "logo": "byu.svg" },
+  { "team": "Duquesne", "logo": "duquesne.svg" },
+  { "team": "Illinois", "logo": "illinois.svg" },
+  { "team": "Morehead St.", "logo": "morehead-st.svg" },
+  { "team": "Washington St.", "logo": "washington-st.svg" },
+  { "team": "Drake", "logo": "drake.svg" },
+  { "team": "Iowa St.", "logo": "iowa-st.svg" },
+  { "team": "S. Dakota St.", "logo": "south-dakota-st.svg" },
+  { "team": "North Carolina", "logo": "north-carolina.svg" },
+  { "team": "Wagner", "logo": "wagner.svg" },
+  { "team": "Mississippi St.", "logo": "mississippi-st.svg" },
+  { "team": "Michigan St.", "logo": "michigan-st.svg" },
+  { "team": "Saint Mary's", "logo": "st-marys-ca.svg" },
+  { "team": "Grand Canyon", "logo": "grand-canyon.svg" },
+  { "team": "Alabama", "logo": "alabama.svg" },
+  { "team": "Charleston", "logo": "col-of-charleston.svg" },
+  { "team": "Clemson", "logo": "clemson.svg" },
+  { "team": "New Mexico", "logo": "new-mexico.svg" },
+  { "team": "Baylor", "logo": "baylor.svg" },
+  { "team": "Colgate", "logo": "colgate.svg" },
+  { "team": "Dayton", "logo": "dayton.svg" },
+  { "team": "Nevada", "logo": "nevada.svg" },
+  { "team": "Arizona", "logo": "arizona.svg" },
+  { "team": "Long Beach St.", "logo": "long-beach-st.svg" },
+  { "team": "Houston", "logo": "houston.svg" },
+  { "team": "Longwood", "logo": "longwood.svg" },
+  { "team": "Nebraska", "logo": "nebraska.svg" },
+  { "team": "Texas A&M", "logo": "texas-am.svg" },
+  { "team": "Wisconsin", "logo": "wisconsin.svg" },
+  { "team": "James Madison", "logo": "james-madison.svg" },
+  { "team": "Duke", "logo": "duke.svg" },
+  { "team": "Vermont", "logo": "vermont.svg" },
+  { "team": "Texas Tech", "logo": "texas-tech.svg" },
+  { "team": "NC State", "logo": "north-carolina-st.svg" },
+  { "team": "Kentucky", "logo": "kentucky.svg" },
+  { "team": "Oakland", "logo": "oakland.svg" },
+  { "team": "Florida", "logo": "florida.svg" },
+  { "team": "Colorado", "logo": "colorado.svg" },
+  { "team": "Marquette", "logo": "marquette.svg" },
+  { "team": "Western Ky.", "logo": "western-ky.svg" },
+  { "team": "Purdue", "logo": "purdue.svg" },
+  { "team": "Grambling St.", "logo": "grambling.svg" },
+  { "team": "Utah St.", "logo": "utah-st.svg" },
+  { "team": "TCU", "logo": "tcu.svg" },
+  { "team": "Gonzaga", "logo": "gonzaga.svg" },
+  { "team": "McNeese", "logo": "mcneese.svg" },
+  { "team": "Kansas", "logo": "kansas.svg" },
+  { "team": "Samford", "logo": "samford.svg" },
+  { "team": "S. Carolina", "logo": "south-carolina.svg" },
+  { "team": "Oregon", "logo": "oregon.svg" },
+  { "team": "Creighton", "logo": "creighton.svg" },
+  { "team": "Akron", "logo": "akron.svg" },
+  { "team": "Texas", "logo": "texas.svg" },
+  { "team": "Colorado St.", "logo": "colorado-st.svg" },
+  { "team": "Tennessee", "logo": "tennessee.svg" },
+  { "team": "Saint Peter's", "logo": "st-peters.svg" }
+];
+
 const teamData = [
   {
     "id": 1,
@@ -666,7 +733,7 @@ const bracketData = [
   {
     "bracket_id": 45,
     "seed": 7,
-    "team": "Florbracket_ida",
+    "team": "Florida",
     "score": 100
   },
   {
@@ -958,23 +1025,27 @@ function drawAllBracketLines() {
 
 function initializeRound1TeamInfo(data) {
   const teams = data;
+  
+  console.log("Raw bracketData:", data);
 
   teams.forEach(team => {
-    const mappedId = team.id < 10 ? `team_0${team.id}` : `team_${team.id}`;
+    const mappedId = team.bracket_id < 10 ? `team_0${team.bracket_id}` : `team_${team.bracket_id}`;
     const teamContainer = document.getElementById(mappedId);
-    
+
     if (teamContainer) {
       const logoContainer = teamContainer.querySelector('.logo_container');
       const seedContainer = teamContainer.querySelector('.seed');
       const teamNameContainer = teamContainer.querySelector('.team_name');
       const emojiContainer = teamContainer.querySelector('.emoji');
       
-	  if (team.id >= 33 && team.id <= 64) {
+      if (team.bracket_id >= 33 && team.bracket_id <= 64) {
         teamContainer.classList.add('right-side');
       }
-	  
-      if (logoContainer) {
-        logoContainer.style.backgroundImage = `url('./logos/${team.logo}')`;
+
+      const logoData = logoMapping.find(entry => entry.team === team.team);
+      
+      if (logoContainer && logoData) {
+        logoContainer.style.backgroundImage = `url('./logos/${logoData.logo}')`;
         logoContainer.style.backgroundSize = 'contain';
         logoContainer.style.backgroundRepeat = 'no-repeat';
       }
@@ -982,7 +1053,9 @@ function initializeRound1TeamInfo(data) {
         seedContainer.textContent = team.seed;
       }
       if (teamNameContainer) {
-        teamNameContainer.textContent = team.team_name;
+		console.log("Setting team name:", team.team);
+		console.log("String team name:", String(team.team));
+        teamNameContainer.textContent = String(team.team);
       }
       if (emojiContainer) {
         emojiContainer.textContent = '';
@@ -992,6 +1065,6 @@ function initializeRound1TeamInfo(data) {
 }
 
 window.onload = function() {
-  initializeRound1TeamInfo(teamData);
+  initializeRound1TeamInfo(bracketData);
   drawAllBracketLines();
 };
