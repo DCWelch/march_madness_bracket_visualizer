@@ -2,13 +2,23 @@
 /* JS for the March Madness Bracket Visualizer */
 
 const settings = {
-  "population": 1,
-  "right_flip": 0,
-  "first_four": 1,
-  "final_four_flare": 0,
-  "finals_flare": 0,
-  "grayscale_on_loss": 0,
-  "strikethrough_on_loss": 0
+  "show_first_four": 1,      /* 0 = Hides the First Four matches,            1 = Shows the First Four matches */
+  "show_winner": 1,          /* 0 = Hides the champion box,                  1 = Shows the champion box */
+  "populate_round_1": 1,     /* 0 = Leaves the round of 64 matches blank,    1 = Populates the round of 64 matches */
+  "populate_round_2": 1,     /* 0 = Leaves the round of 32 matches blank,    1 = Populates the round of 32 matches */
+  "populate_round_3": 1,     /* 0 = Leaves the sweet 16 matches blank,       1 = Populates the round sweet 16 matches */
+  "populate_round_4": 1,     /* 0 = Leaves the elite 8 matches blank,        1 = Populates the round elite 8 matches */
+  "populate_round_5": 1,     /* 0 = Leaves the Final Four matches blank,     1 = Populates the Final Four matches */
+  "populate_round_6": 1,     /* 0 = Leaves the Championship match blank,     1 = Populates the championship match */
+  "populate_round_7": 1,     /* 0 = Leaves the champion box blank,           1 = Populates the champion box */
+  "populate_first_four": 1,  /* 0 = Leaves the First Four matches blank,     1 = Populates the First Four matches */
+  "right_flip": 0,           /* 0 = Leaves the champion box blank,           1 = Populates the champion box */
+  "final_four_flare": 0,     /* 0 = Use the default styling for Final Four,  1 = Adds some Zhuzh to the Final Four matches */
+  "finals_flare": 0,         /* 0 = Use the default styling for final,       1 = Adds some Zhuzh to the championship match */
+  "winner_flare": 0,         /* 0 = Use the default styling for champion,    1 = Adds some Zhuzh to the champion box */
+  "grayscale_on_loss": 0,    /* 0 = Does not alter teams,                    1 = Turns teams that have lost to greyscale */
+  "transparency_on_loss": 0, /* 0 = Does not alter teams,                    1 = Gives teams that have lost 50% opacity */
+  "strikethrough_on_loss": 0 /* 0 = Does not alter teams,                    1 = Puts a strikethrough on the team name  of teams that have lost */
 };
 
 const logoMapping = [
@@ -80,385 +90,385 @@ const logoMapping = [
 
 const bracketData = [
   {
-    "bracket_id": 1,
+    "id": 1,
     "seed": 1,
     "team": "UConn",
     "score": 91
   },
   {
-    "bracket_id": 2,
+    "id": 2,
     "seed": 16,
     "team": "Stetson",
     "score": 52
   },
   {
-    "bracket_id": 3,
+    "id": 3,
     "seed": 8,
     "team": "FAU",
     "score": 65
   },
   {
-    "bracket_id": 4,
+    "id": 4,
     "seed": 9,
     "team": "Northwestern",
     "score": 77
   },
   {
-    "bracket_id": 5,
+    "id": 5,
     "seed": 5,
     "team": "San Diego St.",
     "score": 69
   },
   {
-    "bracket_id": 6,
+    "id": 6,
     "seed": 12,
     "team": "UAB",
     "score": 85
   },
   {
-    "bracket_id": 7,
+    "id": 7,
     "seed": 4,
     "team": "Auburn",
     "score": 76
   },
   {
-    "bracket_id": 8,
+    "id": 8,
     "seed": 13,
     "team": "Yale",
     "score": 78
   },
   {
-    "bracket_id": 9,
+    "id": 9,
     "seed": 6,
     "team": "BYU",
     "score": 71
   },
   {
-    "bracket_id": 10,
+    "id": 10,
     "seed": 11,
     "team": "Duquesne",
     "score": 71
   },
   {
-    "bracket_id": 11,
+    "id": 11,
     "seed": 3,
     "team": "Illinois",
     "score": 85
   },
   {
-    "bracket_id": 12,
+    "id": 12,
     "seed": 14,
     "team": "Morehead St.",
     "score": 69
   },
   {
-    "bracket_id": 13,
+    "id": 13,
     "seed": 7,
     "team": "Washington St.",
     "score": 86
   },
   {
-    "bracket_id": 14,
+    "id": 14,
     "seed": 10,
     "team": "Drake",
     "score": 61
   },
   {
-    "bracket_id": 15,
+    "id": 15,
     "seed": 2,
     "team": "Iowa St.",
     "score": 82
   },
   {
-    "bracket_id": 16,
+    "id": 16,
     "seed": 15,
     "team": "S. Dakota St.",
     "score": 65
   },
   {
-    "bracket_id": 17,
+    "id": 17,
     "seed": 1,
     "team": "North Carolina",
     "score": 90
   },
   {
-    "bracket_id": 18,
+    "id": 18,
     "seed": 16,
     "team": "Wagner",
     "score": 62
   },
   {
-    "bracket_id": 19,
+    "id": 19,
     "seed": 8,
     "team": "Mississippi St.",
     "score": 51
   },
   {
-    "bracket_id": 20,
+    "id": 20,
     "seed": 9,
     "team": "Michigan St.",
     "score": 69
   },
   {
-    "bracket_id": 21,
+    "id": 21,
     "seed": 5,
     "team": "Saint Mary's",
     "score": 66
   },
   {
-    "bracket_id": 22,
+    "id": 22,
     "seed": 12,
     "team": "Grand Canyon",
     "score": 75
   },
   {
-    "bracket_id": 23,
+    "id": 23,
     "seed": 4,
     "team": "Alabama",
     "score": 109
   },
   {
-    "bracket_id": 24,
+    "id": 24,
     "seed": 13,
     "team": "Charleston",
     "score": 96
   },
   {
-    "bracket_id": 25,
+    "id": 25,
     "seed": 6,
     "team": "Clemson",
     "score": 77
   },
   {
-    "bracket_id": 26,
+    "id": 26,
     "seed": 11,
     "team": "New Mexico",
     "score": 56
   },
   {
-    "bracket_id": 27,
+    "id": 27,
     "seed": 3,
     "team": "Baylor",
     "score": 92
   },
   {
-    "bracket_id": 28,
+    "id": 28,
     "seed": 14,
     "team": "Colgate",
     "score": 67
   },
   {
-    "bracket_id": 29,
+    "id": 29,
     "seed": 7,
     "team": "Dayton",
     "score": 63
   },
   {
-    "bracket_id": 30,
+    "id": 30,
     "seed": 10,
     "team": "Nevada",
     "score": 60
   },
   {
-    "bracket_id": 31,
+    "id": 31,
     "seed": 2,
     "team": "Arizona",
     "score": 85
   },
   {
-    "bracket_id": 32,
+    "id": 32,
     "seed": 15,
     "team": "Long Beach St.",
     "score": 65
   },
   {
-    "bracket_id": 33,
+    "id": 33,
     "seed": 1,
     "team": "Houston",
     "score": 86
   },
   {
-    "bracket_id": 34,
+    "id": 34,
     "seed": 16,
     "team": "Longwood",
     "score": 46
   },
   {
-    "bracket_id": 35,
+    "id": 35,
     "seed": 8,
     "team": "Nebraska",
     "score": 83
   },
   {
-    "bracket_id": 36,
+    "id": 36,
     "seed": 9,
     "team": "Texas A&M",
     "score": 98
   },
   {
-    "bracket_id": 37,
+    "id": 37,
     "seed": 5,
     "team": "Wisconsin",
     "score": 61
   },
   {
-    "bracket_id": 38,
+    "id": 38,
     "seed": 12,
     "team": "James Madison",
     "score": 72
   },
   {
-    "bracket_id": 39,
+    "id": 39,
     "seed": 4,
     "team": "Duke",
     "score": 64
   },
   {
-    "bracket_id": 40,
+    "id": 40,
     "seed": 13,
     "team": "Vermont",
     "score": 47
   },
   {
-    "bracket_id": 41,
+    "id": 41,
     "seed": 6,
     "team": "Texas Tech",
     "score": 67
   },
   {
-    "bracket_id": 42,
+    "id": 42,
     "seed": 11,
     "team": "NC State",
     "score": 80
   },
   {
-    "bracket_id": 43,
+    "id": 43,
     "seed": 3,
     "team": "Kentucky",
     "score": 76
   },
   {
-    "bracket_id": 44,
+    "id": 44,
     "seed": 14,
     "team": "Oakland",
     "score": 80
   },
   {
-    "bracket_id": 45,
+    "id": 45,
     "seed": 7,
     "team": "Florida",
     "score": 100
   },
   {
-    "bracket_id": 46,
+    "id": 46,
     "seed": 10,
     "team": "Colorado",
     "score": 102
   },
   {
-    "bracket_id": 47,
+    "id": 47,
     "seed": 2,
     "team": "Marquette",
     "score": 87
   },
   {
-    "bracket_id": 48,
+    "id": 48,
     "seed": 15,
     "team": "Western Ky.",
     "score": 69
   },
   {
-    "bracket_id": 49,
+    "id": 49,
     "seed": 1,
     "team": "Purdue",
     "score": 78
   },
   {
-    "bracket_id": 50,
+    "id": 50,
     "seed": 16,
     "team": "Grambling St.",
     "score": 50
   },
   {
-    "bracket_id": 51,
+    "id": 51,
     "seed": 8,
     "team": "Utah St.",
     "score": 88
   },
   {
-    "bracket_id": 52,
+    "id": 52,
     "seed": 9,
     "team": "TCU",
     "score": 72
   },
   {
-    "bracket_id": 53,
+    "id": 53,
     "seed": 5,
     "team": "Gonzaga",
     "score": 86
   },
   {
-    "bracket_id": 54,
+    "id": 54,
     "seed": 12,
     "team": "McNeese",
     "score": 65
   },
   {
-    "bracket_id": 55,
+    "id": 55,
     "seed": 4,
     "team": "Kansas",
     "score": 93
   },
   {
-    "bracket_id": 56,
+    "id": 56,
     "seed": 13,
     "team": "Samford",
     "score": 89
   },
   {
-    "bracket_id": 57,
+    "id": 57,
     "seed": 6,
     "team": "S. Carolina",
     "score": 73
   },
   {
-    "bracket_id": 58,
+    "id": 58,
     "seed": 11,
     "team": "Oregon",
     "score": 87
   },
   {
-    "bracket_id": 59,
+    "id": 59,
     "seed": 3,
     "team": "Creighton",
     "score": 77
   },
   {
-    "bracket_id": 60,
+    "id": 60,
     "seed": 14,
     "team": "Akron",
     "score": 60
   },
   {
-    "bracket_id": 61,
+    "id": 61,
     "seed": 7,
     "team": "Texas",
     "score": 56
   },
   {
-    "bracket_id": 62,
+    "id": 62,
     "seed": 10,
     "team": "Colorado St.",
     "score": 44
   },
   {
-    "bracket_id": 63,
+    "id": 63,
     "seed": 2,
     "team": "Tennessee",
     "score": 83
   },
   {
-    "bracket_id": 64,
+    "id": 64,
     "seed": 15,
     "team": "Saint Peter's",
     "score": 49
@@ -642,7 +652,7 @@ function initializeRound1TeamInfo(data) {
   console.log("Raw bracketData:", data);
 
   teams.forEach(team => {
-    const mappedId = team.bracket_id < 10 ? `team_0${team.bracket_id}` : `team_${team.bracket_id}`;
+    const mappedId = team.id < 10 ? `team_0${team.id}` : `team_${team.id}`;
     const teamContainer = document.getElementById(mappedId);
 
     if (teamContainer) {
@@ -651,7 +661,7 @@ function initializeRound1TeamInfo(data) {
       const teamNameContainer = teamContainer.querySelector('.team_name');
       const scoreContainer = teamContainer.querySelector('.score');
       
-      if (team.bracket_id >= 33 && team.bracket_id <= 64) {
+      if (team.id >= 33 && team.id <= 64) {
         teamContainer.classList.add('right-side');
       }
 
