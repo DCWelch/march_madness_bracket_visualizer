@@ -2,23 +2,25 @@
 /* JS for the March Madness Bracket Visualizer */
 
 const settings = {
-  "show_first_four": 1,      /* 0 = Hides the First Four matches,            1 = Shows the First Four matches */
-  "show_winner": 1,          /* 0 = Hides the champion box,                  1 = Shows the champion box */
-  "populate_round_1": 1,     /* 0 = Leaves the round of 64 matches blank,    1 = Populates the round of 64 matches */
-  "populate_round_2": 1,     /* 0 = Leaves the round of 32 matches blank,    1 = Populates the round of 32 matches */
-  "populate_round_3": 1,     /* 0 = Leaves the sweet 16 matches blank,       1 = Populates the round sweet 16 matches */
-  "populate_round_4": 1,     /* 0 = Leaves the elite 8 matches blank,        1 = Populates the round elite 8 matches */
-  "populate_round_5": 1,     /* 0 = Leaves the Final Four matches blank,     1 = Populates the Final Four matches */
-  "populate_round_6": 1,     /* 0 = Leaves the Championship match blank,     1 = Populates the championship match */
-  "populate_round_7": 1,     /* 0 = Leaves the champion box blank,           1 = Populates the champion box */
-  "populate_first_four": 1,  /* 0 = Leaves the First Four matches blank,     1 = Populates the First Four matches */
-  "right_flip": 0,           /* 0 = Leaves the champion box blank,           1 = Populates the champion box */
-  "final_four_flare": 0,     /* 0 = Use the default styling for Final Four,  1 = Adds some Zhuzh to the Final Four matches */
-  "finals_flare": 0,         /* 0 = Use the default styling for final,       1 = Adds some Zhuzh to the championship match */
-  "winner_flare": 0,         /* 0 = Use the default styling for champion,    1 = Adds some Zhuzh to the champion box */
-  "grayscale_on_loss": 0,    /* 0 = Does not alter teams,                    1 = Turns teams that have lost to greyscale */
-  "transparency_on_loss": 0, /* 0 = Does not alter teams,                    1 = Gives teams that have lost 50% opacity */
-  "strikethrough_on_loss": 0 /* 0 = Does not alter teams,                    1 = Puts a strikethrough on the team name  of teams that have lost */
+  "show_first_four": 1,       /* 0 = Hides the First Four matches,           1 = Shows the First Four matches */
+  "show_winner": 1,           /* 0 = Hides the champion box,                 1 = Shows the champion box */
+  "populate_round_1": 1,      /* 0 = Leaves the round of 64 matches blank,   1 = Populates the round of 64 matches */
+  "populate_round_2": 1,      /* 0 = Leaves the round of 32 matches blank,   1 = Populates the round of 32 matches */
+  "populate_round_3": 1,      /* 0 = Leaves the sweet 16 matches blank,      1 = Populates the round sweet 16 matches */
+  "populate_round_4": 1,      /* 0 = Leaves the elite 8 matches blank,       1 = Populates the round elite 8 matches */
+  "populate_round_5": 1,      /* 0 = Leaves the Final Four matches blank,    1 = Populates the Final Four matches */
+  "populate_round_6": 1,      /* 0 = Leaves the Championship match blank,    1 = Populates the championship match */
+  "populate_round_7": 1,      /* 0 = Leaves the champion box blank,          1 = Populates the champion box */
+  "populate_first_four": 1,   /* 0 = Leaves the First Four matches blank,    1 = Populates the First Four matches */
+  "right_flip": 0,            /* 0 = Leaves the champion box blank,          1 = Populates the champion box */
+  "final_four_flare": 0,      /* 0 = Use the default styling for Final Four, 1 = Adds some Zhuzh to the Final Four matches */
+  "finals_flare": 0,          /* 0 = Use the default styling for final,      1 = Adds some Zhuzh to the championship match */
+  "winner_flare": 0,          /* 0 = Use the default styling for champion,   1 = Adds some Zhuzh to the champion box */
+  "grayscale_on_loss": 0,     /* 0 = Does not alter teams,                   1 = Turns teams that have lost to greyscale */
+  "transparency_on_loss": 0,  /* 0 = Does not alter teams,                   1 = Gives teams that have lost 50% opacity */
+  "strikethrough_on_loss": 0, /* 0 = Does not alter teams,                   1 = Puts a strikethrough on the team name of teams that have lost */
+  "show_region_labels": 0,    /* 0 = Hides the region labels,                1 = Displays the region labels */
+  "show_logos": 0             /* 0 = Hides the logos,                        1 = Shows logos */
 };
 
 const logoMapping = [
@@ -585,7 +587,6 @@ function drawAllBracketLines() {
   drawBracketLine(game['14'], game['39'], 'right-up');
   drawBracketLine(game['15'], game['40'], 'right-down');
   drawBracketLine(game['16'], game['40'], 'right-up');
-
   drawBracketLine(game['33'], game['49'], 'right-down');
   drawBracketLine(game['34'], game['49'], 'right-up');
   drawBracketLine(game['35'], game['50'], 'right-down');
@@ -594,15 +595,12 @@ function drawAllBracketLines() {
   drawBracketLine(game['38'], game['51'], 'right-up');
   drawBracketLine(game['39'], game['52'], 'right-down');
   drawBracketLine(game['40'], game['52'], 'right-up');
-
   drawBracketLine(game['49'], game['57'], 'right-down');
   drawBracketLine(game['50'], game['57'], 'right-up');
   drawBracketLine(game['51'], game['58'], 'right-down');
   drawBracketLine(game['52'], game['58'], 'right-up');
-
   drawBracketLine(game['57'], game['61'], 'right-down');
   drawBracketLine(game['58'], game['61'], 'right-up');
-  
   drawBracketLine(game['17'], game['41'], 'left-down');
   drawBracketLine(game['18'], game['41'], 'left-up');
   drawBracketLine(game['19'], game['42'], 'left-down');
@@ -619,7 +617,6 @@ function drawAllBracketLines() {
   drawBracketLine(game['30'], game['47'], 'left-up');
   drawBracketLine(game['31'], game['48'], 'left-down');
   drawBracketLine(game['32'], game['48'], 'left-up');
-  
   drawBracketLine(game['41'], game['53'], 'left-down');
   drawBracketLine(game['42'], game['53'], 'left-up');
   drawBracketLine(game['43'], game['54'], 'left-down');
@@ -628,37 +625,32 @@ function drawAllBracketLines() {
   drawBracketLine(game['46'], game['55'], 'left-up');
   drawBracketLine(game['47'], game['56'], 'left-down');
   drawBracketLine(game['48'], game['56'], 'left-up');
-  
   drawBracketLine(game['53'], game['59'], 'left-down');
   drawBracketLine(game['54'], game['59'], 'left-up');
   drawBracketLine(game['55'], game['60'], 'left-down');
   drawBracketLine(game['56'], game['60'], 'left-up');
-  
   drawBracketLine(game['59'], game['62'], 'left-down');
   drawBracketLine(game['60'], game['62'], 'left-up');
-  
   drawBracketLine(game['61'], game['63'], 'right');
   drawBracketLine(game['62'], game['63'], 'left');
-  
-  /*drawBracketLine(game['64'], game[''], 'up');
-  drawBracketLine(game['65'], game[''], 'up');
-  drawBracketLine(game['66'], game[''], 'up');
-  drawBracketLine(game['67'], game[''], 'up');*/
+  /*drawBracketLine(game['63'], game[''], 'up');*/
+  /*drawBracketLine(game['64'], game[''], 'up');*/
+  /*drawBracketLine(game['65'], game[''], 'up');*/
+  /*drawBracketLine(game['66'], game[''], 'up');*/
+  /*drawBracketLine(game['67'], game[''], 'up');*/
 }
 
 function initializeRound1TeamInfo(data) {
   const teams = data;
-  
-  console.log("Raw bracketData:", data);
 
   teams.forEach(team => {
     const mappedId = team.id < 10 ? `team_0${team.id}` : `team_${team.id}`;
     const teamContainer = document.getElementById(mappedId);
 
     if (teamContainer) {
-      const logoContainer = teamContainer.querySelector('.logo_container');
+      const logoContainer = teamContainer.querySelector('.logo');
       const seedContainer = teamContainer.querySelector('.seed');
-      const teamNameContainer = teamContainer.querySelector('.team_name');
+      const teamNameContainer = teamContainer.querySelector('.team');
       const scoreContainer = teamContainer.querySelector('.score');
       
       if (team.id >= 33 && team.id <= 64) {
@@ -676,8 +668,6 @@ function initializeRound1TeamInfo(data) {
         seedContainer.textContent = team.seed;
       }
       if (teamNameContainer) {
-		console.log("Setting team name:", team.team);
-		console.log("String team name:", String(team.team));
         teamNameContainer.textContent = String(team.team);
       }
       if (scoreContainer) {

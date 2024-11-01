@@ -75,11 +75,11 @@ body {
   flex-direction: row-reverse;
 }
 
-.team_container.right-side .team_name {
+.team_container.right-side .team {
   text-align: right;
 }
 
-.logo_container {
+.logo {
   flex-shrink: 0;
   height: 80%;
   width: auto;
@@ -97,7 +97,7 @@ body {
   color: #ccc;
 }
 
-.team_name {
+.team {
   flex-grow: 1;
   text-align: left;
   padding-left: 1%;
@@ -121,8 +121,6 @@ body {
   width: 50%;
 }
 
-/* East */
-/* Round 1 */
 #game_wrapper_01 { grid-column: 1; grid-row: 1 / span 2; }
 #game_wrapper_02 { grid-column: 1; grid-row: 3 / span 2; }
 #game_wrapper_03 { grid-column: 1; grid-row: 5 / span 2; }
@@ -131,18 +129,13 @@ body {
 #game_wrapper_06 { grid-column: 1; grid-row: 11 / span 2; }
 #game_wrapper_07 { grid-column: 1; grid-row: 13 / span 2; }
 #game_wrapper_08 { grid-column: 1; grid-row: 15 / span 2; }
-/* Round 2 */
 #game_wrapper_33 { grid-column: 2; grid-row: 2 / span 2; }
 #game_wrapper_34 { grid-column: 2; grid-row: 6 / span 2; }
 #game_wrapper_35 { grid-column: 2; grid-row: 10 / span 2; }
 #game_wrapper_36 { grid-column: 2; grid-row: 14 / span 2; }
-/* Round 3 */
 #game_wrapper_49 { grid-column: 3; grid-row: 4 / span 2; }
 #game_wrapper_50 { grid-column: 3; grid-row: 12 / span 2; }
-/* Round 4 */
 #game_wrapper_57 { grid-column: 4; grid-row: 8 / span 2; }
-/* West */
-/* Round 1 */
 #game_wrapper_09 { grid-column: 1; grid-row: 17 / span 2; }
 #game_wrapper_10 { grid-column: 1; grid-row: 19 / span 2; }
 #game_wrapper_11 { grid-column: 1; grid-row: 21 / span 2; }
@@ -151,18 +144,13 @@ body {
 #game_wrapper_14 { grid-column: 1; grid-row: 27 / span 2; }
 #game_wrapper_15 { grid-column: 1; grid-row: 29 / span 2; }
 #game_wrapper_16 { grid-column: 1; grid-row: 31 / span 2; }
-/* Round 2 */
 #game_wrapper_37 { grid-column: 2; grid-row: 18 / span 2; }
 #game_wrapper_38 { grid-column: 2; grid-row: 22 / span 2; }
 #game_wrapper_39 { grid-column: 2; grid-row: 26 / span 2; }
 #game_wrapper_40 { grid-column: 2; grid-row: 30 / span 2; }
-/* Round 3 */
 #game_wrapper_51 { grid-column: 3; grid-row: 20 / span 2; }
 #game_wrapper_52 { grid-column: 3; grid-row: 28 / span 2; }
-/* Round 4 */
 #game_wrapper_58 { grid-column: 4; grid-row: 24 / span 2; }
-/* South */
-/* Round 1 */
 #game_wrapper_17 { grid-column: 12; grid-row: 1 / span 2; }
 #game_wrapper_18 { grid-column: 12; grid-row: 3 / span 2; }
 #game_wrapper_19 { grid-column: 12; grid-row: 5 / span 2; }
@@ -171,18 +159,13 @@ body {
 #game_wrapper_22 { grid-column: 12; grid-row: 11 / span 2; }
 #game_wrapper_23 { grid-column: 12; grid-row: 13 / span 2; }
 #game_wrapper_24 { grid-column: 12; grid-row: 15 / span 2; }
-/* Round 2 */
 #game_wrapper_41 { grid-column: 11; grid-row: 2 / span 2; }
 #game_wrapper_42 { grid-column: 11; grid-row: 6 / span 2; }
 #game_wrapper_43 { grid-column: 11; grid-row: 10 / span 2; }
 #game_wrapper_44 { grid-column: 11; grid-row: 14 / span 2; }
-/* Round 3 */
 #game_wrapper_53 { grid-column: 10; grid-row: 4 / span 2; }
 #game_wrapper_54 { grid-column: 10; grid-row: 12 / span 2; }
-/* Round 4 */
 #game_wrapper_59 { grid-column: 9; grid-row: 8 / span 2; }
-/* Midwest */
-/* Round 1 */
 #game_wrapper_25 { grid-column: 12; grid-row: 17 / span 2; }
 #game_wrapper_26 { grid-column: 12; grid-row: 19 / span 2; }
 #game_wrapper_27 { grid-column: 12; grid-row: 21 / span 2; }
@@ -191,22 +174,16 @@ body {
 #game_wrapper_30 { grid-column: 12; grid-row: 27 / span 2; }
 #game_wrapper_31 { grid-column: 12; grid-row: 29 / span 2; }
 #game_wrapper_32 { grid-column: 12; grid-row: 31 / span 2; }
-/* Round 2 */
 #game_wrapper_45 { grid-column: 11; grid-row: 18 / span 2; }
 #game_wrapper_46 { grid-column: 11; grid-row: 22 / span 2; }
 #game_wrapper_47 { grid-column: 11; grid-row: 26 / span 2; }
 #game_wrapper_48 { grid-column: 11; grid-row: 30 / span 2; }
-/* Round 3 */
 #game_wrapper_55 { grid-column: 10; grid-row: 20 / span 2; }
 #game_wrapper_56 { grid-column: 10; grid-row: 28 / span 2; }
-/* Round 4 */
 #game_wrapper_60 { grid-column: 9; grid-row: 24 / span 2; }
-/* Final Four */
 #game_wrapper_61 { grid-column: 5; grid-row: 16 / span 2; }
 #game_wrapper_62 { grid-column: 8; grid-row: 16 / span 2; }
-/* Finals */
 #game_wrapper_63 { grid-column: 6 / span 2; grid-row: 16 / span 2; }
-/* First Four */
 #game_wrapper_64 { grid-column: 5; grid-row: 31 / span 2; }
 #game_wrapper_65 { grid-column: 6; grid-row: 31 / span 2; }
 #game_wrapper_66 { grid-column: 7; grid-row: 31 / span 2; }
