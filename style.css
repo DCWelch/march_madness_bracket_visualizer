@@ -54,10 +54,18 @@ body {
   width: 95%;
   height: 90%;
   box-sizing: border-box;
+  position: relative;
 }
 
-.game_container .team_container:first-child {
-  border-bottom: 1px solid #ccc;
+.game_container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #ccc;
+  transform: translateY(-50%);
 }
 
 .team_container {
@@ -70,6 +78,7 @@ body {
   overflow: hidden;
   flex-direction: row;
 }
+
 
 .team_container.right-side {
   flex-direction: row-reverse;
