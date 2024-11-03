@@ -143,7 +143,7 @@ const bracketData = [
     "id": 9,
     "seed": 6,
     "team": "BYU",
-    "score": 71
+    "score": 67
   },
   {
     "id": 10,
@@ -474,6 +474,24 @@ const bracketData = [
     "seed": 15,
     "team": "Saint Peter's",
     "score": 49
+  },
+  {
+    "id": 65,
+    "seed": 1,
+    "team": "UConn",
+    "score": 75
+  },
+  {
+    "id": 66,
+    "seed": 9,
+    "team": "Northwestern",
+    "score": 58
+  },
+  {
+    "id": 67,
+    "seed": 5,
+    "team": "San Diego St.",
+    "score": 52
   }
 ];
 
@@ -640,12 +658,13 @@ function drawAllBracketLines() {
   /*drawBracketLine(game['67'], game[''], 'up');*/
 }
 
-function initializeRound1TeamInfo(data) {
+function populateBracket(data) {
   const teams = data;
 
   teams.forEach(team => {
-    const mappedId = team.id < 10 ? `team_0${team.id}` : `team_${team.id}`;
-    const teamContainer = document.getElementById(mappedId);
+	const mappedId = team.id.toString().padStart(3, '0');
+    const teamContainerId = `team_${mappedId}`;
+    const teamContainer = document.getElementById(teamContainerId);
 
     if (teamContainer) {
       const logoContainer = teamContainer.querySelector('.logo');
@@ -653,7 +672,7 @@ function initializeRound1TeamInfo(data) {
       const teamNameContainer = teamContainer.querySelector('.team');
       const scoreContainer = teamContainer.querySelector('.score');
       
-      if (team.id >= 33 && team.id <= 64) {
+      if (team.id >= 33 && team.id <= 64) || (team.id >= 81 && team.id <= 96) || (team.id >= 105 && team.id <= 112) || (team.id >= 117 && team.id <= 120) || (team.id == 123) || (team.id == 124) || (team.id == 126) {
         teamContainer.classList.add('right-side');
       }
 
@@ -665,19 +684,19 @@ function initializeRound1TeamInfo(data) {
         logoContainer.style.backgroundRepeat = 'no-repeat';
       }
       if (seedContainer) {
-        seedContainer.textContent = team.seed;
+        seedContainer.textContent = String(team.seed);
       }
       if (teamNameContainer) {
         teamNameContainer.textContent = String(team.team);
       }
       if (scoreContainer) {
-        scoreContainer.textContent = '';
+        scoreContainer.textContent = String(team.score);
       }
     }
   });
 }
 
 window.onload = function() {
-  initializeRound1TeamInfo(bracketData);
+  populateBracket(bracketData);
   drawAllBracketLines();
 };
