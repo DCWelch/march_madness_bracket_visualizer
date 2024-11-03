@@ -492,7 +492,415 @@ const bracketData = [
     "seed": 5,
     "team": "San Diego St.",
     "score": 52
-  }
+  },
+  {
+    "id": 68,
+    "seed": 13,
+    "team": "Yale",
+    "score": 57
+  },
+  {
+    "id": 69,
+    "seed": 11,
+    "team": "Duquesne",
+    "score": 63
+  },
+  {
+    "id": 70,
+    "seed": 3,
+    "team": "Illinois",
+    "score": 89
+  },
+  {
+    "id": 71,
+    "seed": 7,
+    "team": "Washington St.",
+    "score": 56
+  },
+  {
+    "id": 72,
+    "seed": 2,
+    "team": "Iowa St.",
+    "score": 67
+  },
+  {
+    "id": 73,
+    "seed": 1,
+    "team": "North Carolina",
+    "score": 85
+  },
+  {
+    "id": 74,
+    "seed": 9,
+    "team": "Michigan St.",
+    "score": 69
+  },
+  {
+    "id": 75,
+    "seed": 12,
+    "team": "Grand Canyon",
+    "score": 61
+  },
+  {
+    "id": 76,
+    "seed": 4,
+    "team": "Alabama",
+    "score": 72
+  },
+  {
+    "id": 77,
+    "seed": 6,
+    "team": "Clemson",
+    "score": 72
+  },
+  {
+    "id": 78,
+    "seed": 3,
+    "team": "Baylor",
+    "score": 64
+  },
+  {
+    "id": 79,
+    "seed": 7,
+    "team": "Dayton",
+    "score": 68
+  },
+  {
+    "id": 80,
+    "seed": 2,
+    "team": "Arizona",
+    "score": 78
+  },
+  {
+    "id": 81,
+    "seed": 1,
+    "team": "Houston",
+    "score": 100
+  },
+  {
+    "id": 82,
+    "seed": 9,
+    "team": "Texas A&M",
+    "score": 95
+  },
+  {
+    "id": 83,
+    "seed": 12,
+    "team": "James Madison",
+    "score": 55
+  },
+  {
+    "id": 84,
+    "seed": 4,
+    "team": "Duke",
+    "score": 93
+  },
+  {
+    "id": 85,
+    "seed": 11,
+    "team": "NC State",
+    "score": 79
+  },
+  {
+    "id": 86,
+    "seed": 14,
+    "team": "Oakland",
+    "score": 73
+  },
+  {
+    "id": 87,
+    "seed": 10,
+    "team": "Colorado",
+    "score": 77
+  },
+  {
+    "id": 88,
+    "seed": 2,
+    "team": "Marquette",
+    "score": 81
+  },
+  {
+    "id": 89,
+    "seed": 1,
+    "team": "Purdue",
+    "score": 80
+  },
+  {
+    "id": 90,
+    "seed": 8,
+    "team": "Utah St.",
+    "score": 67
+  },
+  {
+    "id": 91,
+    "seed": 5,
+    "team": "Gonzaga",
+    "score": 89
+  },
+  {
+    "id": 92,
+    "seed": 4,
+    "team": "Kansas",
+    "score": 68
+  },
+  {
+    "id": 93,
+    "seed": 11,
+    "team": "Oregon",
+    "score": 73
+  },
+  {
+    "id": 94,
+    "seed": 3,
+    "team": "Creighton",
+    "score": 86
+  },
+  {
+    "id": 95,
+    "seed": 7,
+    "team": "Texas",
+    "score": 58
+  },
+  {
+    "id": 96,
+    "seed": 2,
+    "team": "Tennessee",
+    "score": 62
+  },
+  {
+    "id": 97,
+    "seed": 1,
+    "team": "UConn",
+    "score": 82
+  },
+  {
+    "id": 98,
+    "seed": 5,
+    "team": "San Diego St.",
+    "score": 52
+  },
+  {
+    "id": 99,
+    "seed": 3,
+    "team": "Illinois",
+    "score": 72
+  },
+  {
+    "id": 100,
+    "seed": 2,
+    "team": "Iowa St.",
+    "score": 67
+  },
+  {
+    "id": 101,
+    "seed": 1,
+    "team": "North Carolina",
+    "score": 87
+  },
+  {
+    "id": 102,
+    "seed": 4,
+    "team": "Alabama",
+    "score": 89
+  },
+  {
+    "id": 103,
+    "seed": 6,
+    "team": "Clemson",
+    "score": 77
+  },
+  {
+    "id": 104,
+    "seed": 2,
+    "team": "Arizona",
+    "score": 72
+  },
+  {
+    "id": 105,
+    "seed": 1,
+    "team": "Houston",
+    "score": 51
+  },
+  {
+    "id": 106,
+    "seed": 4,
+    "team": "Duke",
+    "score": 54
+  },
+  {
+    "id": 107,
+    "seed": 11,
+    "team": "NC State",
+    "score": 67
+  },
+  {
+    "id": 108,
+    "seed": 2,
+    "team": "Marquette",
+    "score": 58
+  },
+  {
+    "id": 109,
+    "seed": 1,
+    "team": "Purdue",
+    "score": 80
+  },
+  {
+    "id": 110,
+    "seed": 5,
+    "team": "Gonzaga",
+    "score": 68
+  },
+  {
+    "id": 111,
+    "seed": 3,
+    "team": "Creighton",
+    "score": 75
+  },
+  {
+    "id": 112,
+    "seed": 2,
+    "team": "Tennessee",
+    "score": 82
+  },
+  {
+    "id": 113,
+    "seed": 1,
+    "team": "UConn",
+    "score": 77
+  },
+  {
+    "id": 114,
+    "seed": 3,
+    "team": "Illinois",
+    "score": 52
+  },
+  {
+    "id": 115,
+    "seed": 4,
+    "team": "Alabama",
+    "score": 89
+  },
+  {
+    "id": 116,
+    "seed": 6,
+    "team": "Clemson",
+    "score": 82
+  },
+  {
+    "id": 117,
+    "seed": 4,
+    "team": "Duke",
+    "score": 64
+  },
+  {
+    "id": 118,
+    "seed": 11,
+    "team": "NC State",
+    "score": 76
+  },
+  {
+    "id": 119,
+    "seed": 1,
+    "team": "Purdue",
+    "score": 72
+  },
+  {
+    "id": 120,
+    "seed": 2,
+    "team": "Tennessee",
+    "score": 66
+  },
+  {
+    "id": 121,
+    "seed": 1,
+    "team": "UConn",
+    "score": 86
+  },
+  {
+    "id": 122,
+    "seed": 4,
+    "team": "Alabama",
+    "score": 72
+  },
+  {
+    "id": 123,
+    "seed": 11,
+    "team": "NC State",
+    "score": 50
+  },
+  {
+    "id": 124,
+    "seed": 1,
+    "team": "Purdue",
+    "score": 63
+  },
+  {
+    "id": 125,
+    "seed": 1,
+    "team": "UConn",
+    "score": 75
+  },
+  {
+    "id": 126,
+    "seed": 1,
+    "team": "Purdue",
+    "score": 60
+  }/*,
+  {
+    "id": 127,
+    "seed": ,
+    "team": "",
+    "score": 
+  },
+  {
+    "id": 128,
+    "seed": ,
+    "team": "",
+    "score": 
+  },
+  {
+    "id": 129,
+    "seed": ,
+    "team": "",
+    "score": 
+  },
+  {
+    "id": 130,
+    "seed": ,
+    "team": "",
+    "score": 
+  },
+  {
+    "id": 131,
+    "seed": ,
+    "team": "",
+    "score": 
+  },
+  {
+    "id": 132,
+    "seed": ,
+    "team": "",
+    "score": 
+  },
+  {
+    "id": 133,
+    "seed": ,
+    "team": "",
+    "score": 
+  },
+  {
+    "id": 134,
+    "seed": ,
+    "team": "",
+    "score": 
+  },
+  {
+    "id": 135,
+    "seed": ,
+    "team": "",
+    "score": 
+  }*/
 ];
 
 function drawBracketLine(game1, game2, variant) {
@@ -581,7 +989,7 @@ function drawSVGLine(x1, y1, x2, y2, color, lineJoin, lineCap, strokeWidth) {
   svg.appendChild(line);
 }
 
-function drawAllBracketLines() {
+function drawBracketLines() {
   const game = {};
 
   for (let i = 1; i <= 67; i++) {
@@ -672,7 +1080,7 @@ function populateBracket(data) {
       const teamNameContainer = teamContainer.querySelector('.team');
       const scoreContainer = teamContainer.querySelector('.score');
       
-      if (team.id >= 33 && team.id <= 64) || (team.id >= 81 && team.id <= 96) || (team.id >= 105 && team.id <= 112) || (team.id >= 117 && team.id <= 120) || (team.id == 123) || (team.id == 124) || (team.id == 126) {
+      if (((team.id >= 33) && (team.id <= 64)) || ((team.id >= 81) && (team.id <= 96)) || ((team.id >= 105) && (team.id <= 112)) || ((team.id >= 117) && (team.id <= 120)) || ((team.id == 123)) || ((team.id == 124)) || ((team.id == 126))) {
         teamContainer.classList.add('right-side');
       }
 
@@ -698,5 +1106,5 @@ function populateBracket(data) {
 
 window.onload = function() {
   populateBracket(bracketData);
-  drawAllBracketLines();
+  drawBracketLines();
 };
