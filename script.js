@@ -2,6 +2,7 @@
 /* JS for the March Madness Bracket Visualizer */
 
 const settings = {
+  "data": "m2023",            /* The tournament data with which to populate the bracket (Format: <m/we><year>, ex: m2023 for men's 2023 bracket data) */
   "show_first_four": 1,       /* 0 = Hides the First Four matches,           1 = Shows the First Four matches */
   "show_winner": 1,           /* 0 = Hides the champion box,                 1 = Shows the champion box */
   "populate_round_1": 1,      /* 0 = Leaves the round of 64 matches blank,   1 = Populates the round of 64 matches */
@@ -20,8 +21,18 @@ const settings = {
   "transparency_on_loss": 0,  /* 0 = Does not alter teams,                   1 = Gives teams that have lost 50% opacity */
   "strikethrough_on_loss": 0, /* 0 = Does not alter teams,                   1 = Puts a strikethrough on the team name of teams that have lost */
   "show_region_labels": 0,    /* 0 = Hides the region labels,                1 = Displays the region labels */
-  "show_logos": 0             /* 0 = Hides the logos,                        1 = Shows logos */
-};
+  "show_logos": 1,            /* 0 = Hides the logos,                        1 = Shows logos */
+  "use_local_bracket_data": 1 /* 0 = Pull data from CSV,                     1 = Use data defined in local const localBracketData within script.js */
+}
+
+/*const round0Ids = {}*/
+/*const round1Ids = {}*/
+/*const round2Ids = {}*/
+/*const round3Ids = {}*/
+/*const round4Ids = {}*/
+/*const round5Ids = {}*/
+/*const round6Ids = {}*/
+/*const round7Ids = {}*/
 
 const logoMapping = [
   { "team": "UConn", "logo": "uconn.svg" },
@@ -90,7 +101,7 @@ const logoMapping = [
   { "team": "Saint Peter's", "logo": "st-peters.svg" }
 ];
 
-const bracketData = [
+const localBracketData = [
     {
         "id": "1",
         "seed": "1",
@@ -1064,7 +1075,7 @@ function populateBracket(data) {
   const teams = data;
 
   teams.forEach(team => {
-	const mappedId = team.id.toString().padStart(3, '0');
+    const mappedId = team.id.toString().padStart(3, '0');
     const teamContainerId = `team_${mappedId}`;
     const teamContainer = document.getElementById(teamContainerId);
 
@@ -1073,18 +1084,23 @@ function populateBracket(data) {
       const seedContainer = teamContainer.querySelector('.seed');
       const teamNameContainer = teamContainer.querySelector('.team');
       const scoreContainer = teamContainer.querySelector('.score');
-      
+
       if (((team.id >= 33) && (team.id <= 64)) || ((team.id >= 81) && (team.id <= 96)) || ((team.id >= 105) && (team.id <= 112)) || ((team.id >= 117) && (team.id <= 120)) || ((team.id == 123)) || ((team.id == 124)) || ((team.id == 126))) {
         teamContainer.classList.add('right-side');
       }
 
-      const logoData = logoMapping.find(entry => entry.team === team.team);
-      
-      if (logoContainer && logoData) {
-        logoContainer.style.backgroundImage = `url('./logos/${logoData.logo}')`;
-        logoContainer.style.backgroundSize = 'contain';
-        logoContainer.style.backgroundRepeat = 'no-repeat';
+      if (settings.show_logos === 1) {
+        const logoData = logoMapping.find(entry => entry.team === team.team);
+        if (logoContainer && logoData) {
+          logoContainer.style.backgroundImage = `url('./logos/${logoData.logo}')`;
+          logoContainer.style.backgroundSize = 'contain';
+          logoContainer.style.backgroundRepeat = 'no-repeat';
+          logoContainer.style.display = '';
+        }
+      } else if (logoContainer) {
+        logoContainer.style.display = 'none';
       }
+
       if (seedContainer) {
         seedContainer.textContent = String(team.seed);
       }
@@ -1098,7 +1114,40 @@ function populateBracket(data) {
   });
 }
 
-window.onload = function() {
-  populateBracket(bracketData);
-  drawBracketLines();
-};
+function loadCSV(filePath, callback) {
+  fetch(filePath)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Failed to load ${filePath}`);
+      }
+      return response.text();
+    })
+    .then(csvText => {
+      const rows = csvText.split('\n').filter(row => row.trim() !== '');
+      const headers = rows[0].split(',');
+      const jsonData = rows.slice(1).map(row => {
+        const values = row.split(',');
+        return headers.reduce((obj, header, index) => {
+          obj[header.trim()] = values[index].trim();
+          return obj;
+        }, {});
+      });
+      callback(jsonData);
+    })
+    .catch(error => console.error('Error loading CSV:', error));
+}
+
+function initializeBracket() {
+  if (settings.use_local_bracket_data === 1) {
+    populateBracket(localBracketData);
+    drawBracketLines();
+  } else {
+    const csvFilePath = `data/${settings.data}.csv`;
+    loadCSV(csvFilePath, (bracketData) => {
+      populateBracket(bracketData);
+      drawBracketLines();
+    });
+  }
+}
+
+window.onload = initializeBracket;
