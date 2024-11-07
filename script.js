@@ -2,27 +2,28 @@
 // JS for the March Madness Bracket Visualizer
 
 const settings = {
-  "data": "m2023",            // The tournament data with which to populate the bracket (Format: <m/we><year>, ex: m2023 for men's 2023 bracket data)
-  "show_first_four": 1,       // 0 = Hides the First Four matches,           1 = Shows the First Four matches
-  "show_winner": 1,           // 0 = Hides the champion box,                 1 = Shows the champion box
-  "populate_round_1": 1,      // 0 = Leaves the round of 64 matches blank,   1 = Populates the round of 64 matches
-  "populate_round_2": 1,      // 0 = Leaves the round of 32 matches blank,   1 = Populates the round of 32 matches
-  "populate_round_3": 1,      // 0 = Leaves the sweet 16 matches blank,      1 = Populates the round sweet 16 matches
-  "populate_round_4": 1,      // 0 = Leaves the elite 8 matches blank,       1 = Populates the round elite 8 matches
-  "populate_round_5": 1,      // 0 = Leaves the Final Four matches blank,    1 = Populates the Final Four matches
-  "populate_round_6": 1,      // 0 = Leaves the Championship match blank,    1 = Populates the championship match
-  "populate_round_7": 1,      // 0 = Leaves the champion box blank,          1 = Populates the champion box
-  "populate_first_four": 1,   // 0 = Leaves the First Four matches blank,    1 = Populates the First Four matches
-  "right_flip": 0,            // 0 = Leaves the champion box blank,          1 = Populates the champion box
-  "final_four_flare": 0,      // 0 = Use the default styling for Final Four, 1 = Adds some Zhuzh to the Final Four matches
-  "finals_flare": 0,          // 0 = Use the default styling for final,      1 = Adds some Zhuzh to the championship match
-  "winner_flare": 0,          // 0 = Use the default styling for champion,   1 = Adds some Zhuzh to the champion box
-  "grayscale_on_loss": 0,     // 0 = Does not alter teams,                   1 = Turns teams that have lost to greyscale
-  "transparency_on_loss": 0,  // 0 = Does not alter teams,                   1 = Gives teams that have lost 50% opacity
-  "strikethrough_on_loss": 0, // 0 = Does not alter teams,                   1 = Puts a strikethrough on the team name of teams that have lost
-  "show_region_labels": 0,    // 0 = Hides the region labels,                1 = Displays the region labels
-  "show_logos": 0,            // 0 = Hides the logos,                        1 = Shows logos  ***  Note: Logos are not supplied in the public GitHub repo to comply with NCAA and University licensing
-  "use_local_bracket_data": 0 // 0 = Pull data from CSV,                     1 = Use data defined in local const localBracketData within script.js
+  "data": "m2023",             // The tournament data with which to populate the bracket (Format: <m/we><year>, ex: m2023 for men's 2023 bracket data)
+  "show_first_four": 1,        // 0 = Hides the First Four matches,           1 = Shows the First Four matches
+  "show_winner": 1,            // 0 = Hides the champion box,                 1 = Shows the champion box
+  "populate_round_1": 1,       // 0 = Leaves the round of 64 matches blank,   1 = Populates the round of 64 matches
+  "populate_round_2": 1,       // 0 = Leaves the round of 32 matches blank,   1 = Populates the round of 32 matches
+  "populate_round_3": 1,       // 0 = Leaves the sweet 16 matches blank,      1 = Populates the round sweet 16 matches
+  "populate_round_4": 1,       // 0 = Leaves the elite 8 matches blank,       1 = Populates the round elite 8 matches
+  "populate_round_5": 1,       // 0 = Leaves the Final Four matches blank,    1 = Populates the Final Four matches
+  "populate_round_6": 1,       // 0 = Leaves the Championship match blank,    1 = Populates the championship match
+  "populate_round_7": 1,       // 0 = Leaves the champion box blank,          1 = Populates the champion box
+  "populate_first_four": 1,    // 0 = Leaves the First Four matches blank,    1 = Populates the First Four matches
+  "right_flip": 0,             // 0 = Leaves the champion box blank,          1 = Populates the champion box
+  "final_four_flare": 0,       // 0 = Use the default styling for Final Four, 1 = Adds some Zhuzh to the Final Four matches
+  "finals_flare": 0,           // 0 = Use the default styling for final,      1 = Adds some Zhuzh to the championship match
+  "winner_flare": 0,           // 0 = Use the default styling for champion,   1 = Adds some Zhuzh to the champion box
+  "grayscale_on_loss": 0,      // 0 = Does not alter teams,                   1 = Turns teams that have lost to greyscale
+  "transparency_on_loss": 0,   // 0 = Does not alter teams,                   1 = Gives teams that have lost 50% opacity
+  "strikethrough_on_loss": 0,  // 0 = Does not alter teams,                   1 = Puts a strikethrough on the team name of teams that have lost
+  "show_region_labels": 0,     // 0 = Hides the region labels,                1 = Displays the region labels
+  "show_logos": 0,             // 0 = Hides the logos,                        1 = Shows logos  ***  Note: Logos are not supplied in the public GitHub repo to comply with NCAA and University licensing
+  "use_local_bracket_data": 1, // 0 = Pull data from CSV,                     1 = Use data defined in local const localBracketData within script.js
+  "hide_seed": 1
 }
 
 //const round0Ids = {}
