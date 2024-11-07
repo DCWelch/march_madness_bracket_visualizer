@@ -1,12 +1,10 @@
-<hr style="border: none; border-top: 1px solid #ccc;" />
-
 # March Madness Bracket Visualizer
 
 A tool to create visualizations of the NCAA Division I men's and women's basketball tournament brackets using only HTML, CSS, and JS.
 
 Along with this tool is a simple dataset containing the team name, seed, and score for each team in each game of each tournament from 1939 to 2024 for the men's tournament, and 1982 to 2024 for the women's tournament, sourced from [NCAA.com](https://www.ncaa.com/).
 
-<hr style="border: none; border-top: 1px solid #ccc;" />
+<hr style="border: none; border-bottom: 1px solid #e1e4e8; margin-top: -10px; margin-bottom: 20px;" />
 
 These places (as well as many others) have great resources if you are looking for more robust March Madness data or alternate tournament bracket visualizations:
 
@@ -16,7 +14,7 @@ These places (as well as many others) have great resources if you are looking fo
 - NCAA public dataset in BigQuery (Access point for an extreme amount of data about NCAA athletics hosted by Google)
 - https://github.com/danvk/march-madness-data (JSON files for all brackets from 1985–2017 and an exploration into the highest sum of seeds in a game)
 
-<hr style="border: none; border-top: 1px solid #ccc;" />
+<hr style="border: none; border-bottom: 1px solid #e1e4e8; margin-top: -10px; margin-bottom: 20px;" />
 
 An example visualization on a live webpage hosted by GitHub Pages and populated with data from the 2023 men's tournament can be seen at:
      https://dcwelch.github.io/march_madness_bracket_visualizer/
