@@ -1,3 +1,5 @@
+<hr style="border: none; border-top: 1px solid #ccc;" />
+
 # March Madness Bracket Visualizer
 
 A tool to create visualizations of the NCAA Division I men's and women's basketball tournament brackets using only HTML, CSS, and JS.
