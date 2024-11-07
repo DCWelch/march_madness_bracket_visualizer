@@ -22,7 +22,7 @@ const settings = {
   "strikethrough_on_loss": 0, /* 0 = Does not alter teams,                   1 = Puts a strikethrough on the team name of teams that have lost */
   "show_region_labels": 0,    /* 0 = Hides the region labels,                1 = Displays the region labels */
   "show_logos": 1,            /* 0 = Hides the logos,                        1 = Shows logos */
-  "use_local_bracket_data": 1 /* 0 = Pull data from CSV,                     1 = Use data defined in local const localBracketData within script.js */
+  "use_local_bracket_data": 0 /* 0 = Pull data from CSV,                     1 = Use data defined in local const localBracketData within script.js */
 }
 
 /*const round0Ids = {}*/
