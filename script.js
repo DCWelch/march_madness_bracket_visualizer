@@ -23,18 +23,18 @@ const settings = {
   "show_region_labels": 0,     // 0 = Hides the region labels,                1 = Displays the region labels
   "show_logos": 0,             // 0 = Hides the logos,                        1 = Shows logos  ***  Note: Logos are not supplied in the public GitHub repo to comply with NCAA and University licensing
   "use_local_bracket_data": 1, // 0 = Pull data from CSV,                     1 = Use data defined in local const localBracketData within script.js
-  "hide_seed": 1
+  "hide_seed": 1               // 0 = Displays the seed for each shown team,  1 = Hides the seed for each team
 }
 
-const round0Ids = {127,128,129,130,131,132,133,134}
-const round1Ids = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,54,56,57,58,59,60,61,62,63,64}
-const round2Ids = {65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96}
-const round3Ids = {97,98,99,100,101,102,103,104,105,0106,107,108,109,110,111,112}
-const round4Ids = {113,114,115,116,117,118,119,120}
-const round5Ids = {121,122,123,124}
-const round6Ids = {125,126}
+const round0Ids = [127,128,129,130,131,132,133,134]
+const round1Ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,54,56,57,58,59,60,61,62,63,64]
+const round2Ids = [65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96]
+const round3Ids = [97,98,99,100,101,102,103,104,105,0106,107,108,109,110,111,112]
+const round4Ids = [113,114,115,116,117,118,119,120]
+const round5Ids = [121,122,123,124]
+const round6Ids = [125,126]
 
-// Contains the mapping for the top 64 teams in the m2023 tournament
+// m2023 top 64 teams
 const logoMapping = [
   { "team": "UConn", "logo": "uconn.svg" },
   { "team": "Stetson", "logo": "stetson.svg" },
@@ -102,7 +102,7 @@ const logoMapping = [
   { "team": "Saint Peter's", "logo": "st-peters.svg" }
 ];
 
-// m2023 data
+// m2023
 const localBracketData = [
     {
         "id": "1",
