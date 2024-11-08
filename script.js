@@ -23,7 +23,8 @@ const settings = {
   "show_region_labels": 0,     // 0 = Hides the region labels,                1 = Displays the region labels
   "show_logos": 0,             // 0 = Hides the logos,                        1 = Shows logos  ***  Note: Logos are not supplied in the public GitHub repo to comply with NCAA and University licensing
   "use_local_bracket_data": 0, // 0 = Pull data from CSV,                     1 = Use data defined in local const localBracketData within script.js
-  "hide_seed": 1               // 0 = Displays the seed for each shown team,  1 = Hides the seed for each team
+  "hide_seed": 1,              // 0 = Displays the seed for each shown team,  1 = Hides the seed for each team
+  "show_header": 0             // 0 = Hides the round headers,                1 = Shows the round headers
 }
 
 const round0Ids = [127,128,129,130,131,132,133,134]
