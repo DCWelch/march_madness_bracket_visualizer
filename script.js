@@ -2,7 +2,7 @@
 // JS for the March Madness Bracket Visualizer
 
 const settings = {
-  "data": "m2023",             // The tournament data with which to populate the bracket (Format: <m/we><year>, ex: m2023 for men's 2023 bracket data)
+  "data": "m2023",             // The tournament data with which to populate the bracket (Format: <m/w><year>, ex: m2023 for men's 2023 bracket data)
   "show_first_four": 1,        // 0 = Hides the First Four matches,           1 = Shows the First Four matches
   "show_winner": 1,            // 0 = Hides the champion box,                 1 = Shows the champion box
   "populate_round_1": 1,       // 0 = Leaves the round of 64 matches blank,   1 = Populates the round of 64 matches
